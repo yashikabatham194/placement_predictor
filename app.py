@@ -197,7 +197,7 @@ def navbar():
 
 
 def home_page():
-    st.markdown('''<div class="hero landing-hero"><div class="hero-badge">AI-Powered Analytics</div><h1>See the next step in every student's placement journey.</h1><p>Use a tuned placement model and a clear academic profile to understand placement likelihood with confidence.</p></div>''', unsafe_allow_html=True)
+    st.markdown('''<div class="hero landing-hero"><div class="hero-badge">AI-Powered Analytics</div><div style="font-size:18px;font-weight:700;margin-bottom:12px;">Welcome!</div><h1>See the next step in every student's placement journey.</h1><p>Use a tuned placement model and a clear academic profile to understand placement likelihood with confidence.</p></div>''', unsafe_allow_html=True)
     if st.button("Predict Placement", key="hero_predict"):
         go("predict")
         st.rerun()
@@ -290,7 +290,7 @@ def result_page():
 
 
 def about_page():
-    st.markdown('''<div class="hero"><div class="hero-badge">About the Model</div><h1>Clear placement insights, thoughtfully presented.</h1><p>This tool uses the existing tuned Random Forest model to interpret academic, skill, and experience inputs.</p></div>''', unsafe_allow_html=True)
+    st.markdown('''<div class="hero"><div class="hero-badge">About the Model</div><h1>Clear placement insights, thoughtfully presented.</h1><p>This tool uses the existing tuned Logistic Regression model to interpret academic, skill, and experience inputs.</p></div>''', unsafe_allow_html=True)
     with card("How it works", ""):
         st.write("Select a student profile or adjust the values manually, then review the placement probability and model confidence on a dedicated result page.")
 
@@ -299,4 +299,5 @@ if "page" not in st.session_state:
     st.session_state.page = "home"
 navbar()
 {"home": home_page, "predict": predict_page, "result": result_page, "about": about_page}[st.session_state.page]()
+
 
