@@ -290,7 +290,7 @@ def result_page():
 
 
 def about_page():
-    st.markdown('''<div class="hero"><div class="hero-badge">About the Model</div><h1>Clear placement insights, thoughtfully presented.</h1><p>This tool uses the existing tuned Random Forest model to interpret academic, skill, and experience inputs.</p></div>''', unsafe_allow_html=True)
+    st.markdown('''<div class="hero"><div class="hero-badge">About the Model</div><h1>Clear placement insights, thoughtfully presented.</h1><p>This tool uses the existing tuned Logistic Regression model to interpret academic, skill, and experience inputs.</p></div>''', unsafe_allow_html=True)
     with card("How it works", ""):
         st.write("Select a student profile or adjust the values manually, then review the placement probability and model confidence on a dedicated result page.")
 
