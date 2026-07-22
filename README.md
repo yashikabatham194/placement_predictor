@@ -2,9 +2,6 @@
 
 An end-to-end machine learning project that predicts whether a student is likely to be **Placed** or **Not Placed**, based on academic performance, skill scores, and experience indicators.
 
-**Author:** Yashika Batham
-**Program:** MBA — Business Analytics
-
 ---
 
 ## Problem Statement
@@ -39,3 +36,6 @@ Colleges currently assess placement readiness informally, making it hard to iden
 
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
 
+## Developed By:
+Yashika Batham
+MBA — Business Analytics
